@@ -6,54 +6,126 @@ main{max-width:760px;margin:0 auto;padding:32px 16px 64px}h1{font-size:30px;line
 p,li{color:var(--muted)}strong{color:var(--text)}a{color:var(--accent)}.card{background:var(--card);border-radius:16px;padding:16px 20px;margin:16px 0}
 table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-top:1px solid rgba(127,127,127,.25);padding:8px 6px;text-align:left;vertical-align:top}th{color:var(--text)}
 nav a{margin-right:16px}</style></head><body><main><nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a></nav>
-<h1>Privacy Policy</h1><p>AI Family Locator (“Family Locator: Kids Tracker” on the App Store)<br>Effective date: 27 September 2026</p>
-<p>This policy explains what data the AI Family Locator iOS app (“the App”) collects, why, who it is shared with and what choices you have. The App is operated by <strong>YeahApps Limited</strong> (“we”, “us”). Contact: <a href="mailto:y@yeahapps.me">y@yeahapps.me</a>.</p>
+<h1>Privacy Policy</h1>
+<p>AI Family Locator (“Family Locator: Kids Tracker” on the App Store and “AI Family Locator” on Google Play)<br>Effective date: 29 September 2026<br>Last updated: 29 September 2026</p>
+
+<div class="card">
+<p><strong>Who we are.</strong> The AI Family Locator mobile application (“the App”) is developed and operated by <strong>YeahApps Limited</strong> (“we”, “us”, “our”), which is also the data controller responsible for your personal data. Contact: <a href="mailto:y@yeahapps.me">y@yeahapps.me</a>.</p>
+<p><strong>What this policy covers.</strong> This policy explains what personal and sensitive data the App collects on <strong>both the iOS (App Store) and Android (Google Play) versions</strong>, why we collect it, how it is used, who it is shared with, how long we keep it and the choices and rights you have. It applies to the App and to our related websites at this domain.</p>
+</div>
 
 <h2>1. The short version</h2>
-<ul><li>The App shares your location only with the people you invite to your family circle and who accept the invitation.</li>
-<li>We do not sell your data, we do not use it for advertising and we do not track you across other companies’ apps or websites.</li>
-<li>You can delete your account and data at any time in <strong>Profile → Delete account</strong>.</li></ul>
+<ul><li>We share your location <strong>only with the family members you invite</strong> to your circle and who accept your invitation on their own device.</li>
+<li>We <strong>do not sell</strong> your personal data, <strong>do not use it for advertising</strong> and <strong>do not track you across other companies’ apps or websites</strong>. We do not use third-party advertising SDKs and we do not request App Tracking Transparency permission because we do not track you.</li>
+<li>We collect the data needed to run the family location service, nothing more.</li>
+<li>You can <strong>delete your account and data at any time</strong> — in the App (Profile → Delete account) or by writing to <a href="mailto:y@yeahapps.me">y@yeahapps.me</a> from the web, even if you have uninstalled the App.</li>
+<li>Data sent to and from our servers is encrypted in transit (HTTPS/TLS).</li></ul>
 
-<h2>2. Data we collect and why</h2>
-<table><tr><th>Data</th><th>Why we use it</th></tr>
-<tr><td><strong>Precise location</strong> and location history (including in the background, if you allow “Always”)</td><td>To show you on your family’s map, build location history, detect arrivals and departures at places you set, send SOS alerts with your position and build driving reports.</td></tr>
-<tr><td><strong>Driving and movement data</strong> derived on your device from location and motion sensors: trips, speed, sudden braking or acceleration</td><td>Driving reports and speed alerts for your family.</td></tr>
-<tr><td><strong>Battery level</strong> of your phone</td><td>Shown to your family members and used for low-battery alerts.</td></tr>
-<tr><td><strong>Name, profile photo</strong></td><td>To show who you are on the family map. Photos you choose as an avatar are uploaded to our image storage.</td></tr>
-<tr><td><strong>Phone number, email address</strong></td><td>To sign in, restore your account and invite family members. If you pick a person from your Contacts, only the phone number you select is used for the invitation; your address book is not uploaded.</td></tr>
-<tr><td><strong>Messages to the Family AI assistant</strong></td><td>To generate answers. Your recent conversation is sent to our server and processed by an AI model provider acting on our behalf. The chat history is stored on your device.</td></tr>
-<tr><td><strong>Photo metadata (Journey feature, optional)</strong></td><td>The App reads only the capture time and geotag of photos on your device to draw your path. <strong>Photos never leave your device.</strong> If you choose to share your Journey with family, only visits (coordinates, start and end time, number of photos) are uploaded.</td></tr>
-<tr><td><strong>Identifiers</strong>: account ID, device installation ID, push notification token</td><td>To run your account, deliver notifications and keep the service secure.</td></tr>
-<tr><td><strong>Purchases</strong></td><td>To unlock Premium. Payments are processed by Apple; we never receive your card details.</td></tr>
-<tr><td><strong>Usage and diagnostic data</strong>: app interactions, crash reports</td><td>To understand which features are used and to fix crashes. This data is not linked to your name.</td></tr>
-<tr><td><strong>IP address</strong></td><td>To determine your country for regional settings (e.g. the map provider).</td></tr></table>
+<h2>2. Data we collect, why, and whether you must provide it</h2>
+<p>The table below lists every category of data the App may collect, the purpose, and whether it is required. “Required” means the feature cannot work without it; you can refuse or withdraw consent at any time, but the related feature will not function.</p>
+<table>
+<tr><th>Data</th><th>Why we use it (and legal basis under GDPR)</th><th>Required?</th></tr>
+<tr><td><strong>Precise and approximate location</strong>, including background location if you allow “Always”, and location history</td><td>To show you on your family’s private map, build location history, detect arrival/departure at places you set, send SOS alerts with your position and produce driving reports. Legal basis: performance of our contract with you and your consent for precise/background location and for sharing with your circle.</td><td>Yes for core location features</td></tr>
+<tr><td><strong>Driving and movement data</strong> derived on your device from location and motion sensors: trips, speed, abrupt braking or acceleration</td><td>Driving reports and speed alerts for your family. Legal basis: contract and consent.</td><td>No (optional, needs motion permission)</td></tr>
+<tr><td><strong>Battery level</strong> of your device</td><td>Shown to your family members and used for low-battery alerts. Legal basis: contract and consent.</td><td>Yes for low-battery alert</td></tr>
+<tr><td><strong>Name, profile photo / avatar</strong></td><td>To show who you are on the family map. Avatars you choose are uploaded to our image storage. Legal basis: contract.</td><td>Yes (name); avatar optional</td></tr>
+<tr><td><strong>Phone number and email address</strong></td><td>To create and sign in to your account, restore your account and invite family members. If you choose a person from your Contacts, <strong>only the phone number you select is used to send the invitation; your address book is never uploaded</strong>. Legal basis: contract and consent for contacts access.</td><td>Yes for account/invitations</td></tr>
+<tr><td><strong>Messages you send to the Family AI assistant</strong></td><td>To generate answers. Your recent conversation is sent to our server and processed by an AI model provider acting on our behalf as a processor. Chat history is stored on your device. Legal basis: contract and consent. <strong>Please do not include sensitive personal data about yourself or others in AI chats.</strong></td><td>No (optional)</td></tr>
+<tr><td><strong>Photo metadata (Journey feature, optional)</strong></td><td>The App reads only the capture time and geotag of photos on your device to draw your path. <strong>Your photos never leave your device.</strong> If you choose to share your Journey with family, only the resulting visits (coordinates, start and end time, number of photos) are uploaded. Legal basis: consent.</td><td>No (optional)</td></tr>
+<tr><td><strong>Identifiers</strong>: account ID, device/installation ID, push notification token, and advertising/device identifiers used only by our analytics and crash tools</td><td>To operate your account, deliver notifications, prevent abuse and keep the service secure. We do not use these identifiers to track you across other companies’ apps or websites. Legal basis: contract and legitimate interests (security).</td><td>Yes for core service</td></tr>
+<tr><td><strong>Purchase and subscription status</strong></td><td>To unlock and restore Premium. Payments are processed by Apple (App Store) or Google (Google Play); <strong>we never receive your card or full payment details</strong>. Legal basis: contract.</td><td>Only if you buy Premium</td></tr>
+<tr><td><strong>Usage and diagnostic data</strong>: app interactions/events and crash reports</td><td>To understand which features are used and to fix crashes and improve reliability. This data is aggregated or pseudonymised and is not used for advertising. Legal basis: legitimate interests (service improvement).</td><td>No (you can limit analytics in device settings)</td></tr>
+<tr><td><strong>IP address</strong></td><td>To determine your approximate country for regional settings (for example the map provider) and for security/abuse prevention. Legal basis: legitimate interests.</td><td>Yes</td></tr>
+</table>
+<p><strong>We do not collect</strong> health data, financial account details, government IDs, biometric data, or your private messages/SMS. We do not access your microphone or camera unless you use a feature that requires it, and we do not collect your photos.</p>
 
-<h2>3. Who can see your data</h2>
-<ul><li><strong>Your family circle</strong>: people you invited and who accepted can see your location, history, places, battery level, driving reports and SOS alerts. Joining always requires the member to install the App and accept the invitation on their own device.</li>
-<li><strong>Service providers</strong> that process data on our behalf under contract: cloud hosting of our backend, Google Firebase (push notifications, analytics, crash reporting, remote configuration), Cloudinary (profile photo storage), an AI model provider (Family AI assistant) and IP geolocation. They may only use the data to provide their service to us.</li>
-<li><strong>Authorities</strong>, only when required by law.</li></ul>
-<p>We do not sell personal data and do not share it with data brokers or advertisers.</p>
+<h2>3. Device permissions we request</h2>
+<ul>
+<li><strong>Location (while using and background “Always”)</strong> — to share your position with your circle and power alerts. Background location is optional.</li>
+<li><strong>Motion &amp; Fitness</strong> — to detect driving and movement for driving reports.</li>
+<li><strong>Contacts</strong> — only to let you pick a phone number to invite. Your full address book is not uploaded.</li>
+<li><strong>Photos</strong> — only for the optional Journey feature, to read capture time and geotags on your device; photos are not uploaded.</li>
+<li><strong>Notifications</strong> — for arrival/departure, SOS, low-battery and account alerts.</li>
+</ul>
+<p>You can change or withdraw any permission at any time in <strong>iOS Settings → AI Family Locator</strong> or <strong>Android Settings → Apps → AI Family Locator → Permissions</strong>. Denying location access prevents us from sharing your position with your family, but the App remains usable to a limited extent.</p>
 
-<h2>4. How long we keep data</h2>
-<p>Location history is kept while your account is active so your family can see it; account data is kept until you delete your account. When you delete your account (Profile → Delete account), your profile, places and location history are deleted from our servers within 30 days, except where we must keep limited records by law. Crash and analytics data is kept by Firebase according to its retention settings.</p>
+<h2>4. How we use your data</h2>
+<ul><li>Provide, operate and maintain the family location sharing service.</li>
+<li>Share your location, history, places, battery level, driving reports and SOS alerts <strong>only</strong> with family members you invite and who accept.</li>
+<li>Send you service and safety notifications you have enabled.</li>
+<li>Provide the Family AI assistant when you choose to use it.</li>
+<li>Process purchases and restore entitlements.</li>
+<li>Detect, prevent and address fraud, abuse and security incidents.</li>
+<li>Diagnose crashes and improve the App.</li>
+<li>Comply with legal obligations.</li></ul>
+<p>We do <strong>not</strong> use your personal data to serve advertising, and we do not build advertising profiles.</p>
 
-<h2>5. Your choices and rights</h2>
-<ul><li>Change location, motion, contacts, photos and notification permissions at any time in iOS Settings. Without location access the App cannot share your position.</li>
-<li>Delete your account and data in the App: Profile → Delete account.</li>
-<li>Depending on where you live (for example under the GDPR or CCPA), you may request access to, correction of, export of or deletion of your personal data, and object to or restrict processing. Write to <a href="mailto:y@yeahapps.me">y@yeahapps.me</a>; we answer within 30 days. You may also complain to your local data protection authority.</li></ul>
+<h2>5. Who can see your data / who we share it with</h2>
+<ul>
+<li><strong>Your family circle</strong> — the people you invite who accept. They can see your location, history, places, battery level, driving reports and SOS alerts. Joining always requires the member to install the App and accept the invitation on their own device. <strong>Do not invite anyone you do not trust to see this information.</strong></li>
+<li><strong>Service providers / sub-processors</strong> that process data on our behalf under contract and only for the purposes described above:
+  <ul>
+  <li>Cloud hosting of our backend and databases;</li>
+  <li><strong>Google Firebase</strong> (push notifications, analytics, crash reporting, remote configuration);</li>
+  <li><strong>Cloudinary</strong> (profile avatar storage);</li>
+  <li>An <strong>AI model provider</strong> (Family AI assistant);</li>
+  <li><strong>IP geolocation</strong> and map tile providers (for regional settings and the map).</li>
+  </ul>
+  These providers may only use your data to provide their service to us.</li>
+<li><strong>Payment providers</strong> — Apple and Google process purchases; we receive only a purchase/entitlement status, not your card details.</li>
+<li><strong>Professional advisers, authorities and courts</strong> — only where required by law or to establish, exercise or defend legal claims, and only after a lawful request.</li>
+<li><strong>A successor entity</strong> — if we are involved in a merger, acquisition or sale of assets, your data may be transferred. We will require the recipient to honour this policy or obtain your consent.</li>
+</ul>
+<p><strong>We do not sell or “share” personal data for cross-context behavioural advertising</strong> as those terms are defined under the CCPA/CPRA, and we do not share data with data brokers or advertisers.</p>
 
-<h2>6. Children</h2>
-<p>Families use the App to see where children are, so a child may be a member of a family circle. A child joins only on an invitation accepted on the child’s own device, and a parent or guardian should set up and supervise the child’s participation. We do not knowingly collect data from children for any purpose other than providing the family location service, and we never use it for advertising. If you believe a child joined without a parent’s consent, contact us and we will delete the data.</p>
+<h2>6. Data retention</h2>
+<p>We keep personal data only as long as necessary for the purposes described above:</p>
+<ul>
+<li><strong>Location history</strong> — kept while your account is active so your family can see it, and you can delete locations individually where the App allows.</li>
+<li><strong>Account data, profile, places and location history</strong> — deleted when you delete your account, as described in section 7, and otherwise within 30 days of a deletion request.</li>
+<li><strong>Purchase records</strong> — kept as long as required for tax, accounting and legal purposes.</li>
+<li><strong>Crash and analytics data</strong> — kept by Firebase according to its retention settings, and generally for no longer than 14 months.</li>
+<li><strong>Security and abuse logs</strong> — kept for up to 12 months.</li>
+</ul>
 
-<h2>7. Security</h2>
-<p>Data exchanged with our servers is transmitted over encrypted connections (HTTPS) and stored with access controls. No system is completely secure, but we work to protect your data and will notify you of a breach where required by law.</p>
+<h2>7. Deleting your account and data</h2>
+<p>You can delete your account and associated data at any time:</p>
+<ul>
+<li><strong>In the App:</strong> Profile → Delete account.</li>
+<li><strong>On the web (no App needed):</strong> send an email from any address to <a href="mailto:y@yeahapps.me">y@yeahapps.me</a> with the subject “Delete my account” and the phone number or email associated with your account. We will verify the request and complete the deletion.</li>
+</ul>
+<p>When you delete your account we delete your profile, places, location history and associated personal data from our servers within <strong>30 days</strong>, except where we must retain limited records to comply with law (for example purchase/tax records). Deleting your account does not automatically cancel an App Store or Google Play subscription — you must cancel the subscription separately in the relevant store.</p>
 
-<h2>8. International transfers</h2>
-<p>Our providers may process data outside your country. Where required, transfers are protected by appropriate safeguards such as standard contractual clauses.</p>
+<h2>8. Security</h2>
+<p>Data exchanged with our servers is transmitted over encrypted connections (HTTPS/TLS) and stored with access controls and least-privilege rules. We restrict access to personal data to personnel and providers who need it. No system is completely secure, but we work to protect your data and will notify you and the relevant authorities of a personal data breach where required by law.</p>
 
-<h2>9. Changes</h2>
-<p>We may update this policy. We will change the effective date above and, for significant changes, notify you in the App.</p>
+<h2>9. Your privacy rights</h2>
+<p>Depending on where you live, you may have some or all of the following rights. To exercise any of them, email <a href="mailto:y@yeahapps.me">y@yeahapps.me</a>. We will respond within the time required by applicable law (generally 30 days, or 45 days under the CCPA) and may need to verify your identity.</p>
+<ul>
+<li><strong>GDPR / UK GDPR (EEA, UK, Switzerland):</strong> access, correction, deletion, restriction of processing, portability (data export), objection to processing based on legitimate interests, and withdrawal of consent at any time (without affecting processing already carried out). You may lodge a complaint with your local data protection authority.</li>
+<li><strong>CCPA / CPRA (California):</strong> right to know the categories and specific pieces of personal information we collect, the sources, purposes and third parties; right to delete; right to correct; right to opt out of sale or sharing (we do neither); right to limit use of sensitive personal information (we use sensitive location data only to provide the service); and right to non-discrimination for exercising your rights.</li>
+<li><strong>Other regions</strong> (for example Brazil LGPD, Canada PIPEDA, Australia Privacy Act and APP) may grant similar rights; we will honour lawful requests.</li>
+</ul>
+<p><strong>Authorised agents</strong> may submit requests on your behalf with proof of authorisation. We do not sell personal data and therefore do not offer a “Do Not Sell” link, but you can contact us with any privacy request.</p>
 
-<h2>10. Contact</h2>
-<p>YeahApps Limited · <a href="mailto:y@yeahapps.me">y@yeahapps.me</a></p>
+<h2>10. Children’s privacy</h2>
+<p>Families use the App to see where their children are, so a child may be a member of a family circle. We take children’s privacy seriously:</p>
+<ul>
+<li>A child joins <strong>only</strong> through an invitation that a parent or legal guardian creates and that is accepted on the child’s own device. A parent or guardian should set up and supervise the child’s participation and should be the account holder.</li>
+<li>We collect a child’s data <strong>only</strong> to provide the family location service. We <strong>never</strong> use children’s data for advertising or behavioural targeting and we do not build profiles of children for marketing.</li>
+<li>For the Google Play version, we comply with the <strong>Google Play Families Policy</strong> and the Families Self-Certified Ads SDK requirements; our App contains no advertising SDKs. For the App Store version we comply with applicable children’s privacy rules (COPPA and equivalent laws).</li>
+<li>We do not knowingly collect more data from children than is necessary for the service. If you believe a child has used the App without a parent’s or guardian’s consent, contact us at <a href="mailto:y@yeahapps.me">y@yeahapps.me</a> and we will delete the data and account.</li>
+</ul>
+
+<h2>11. International data transfers</h2>
+<p>Our providers may process data outside your country, including in the United States. Where required, we put in place appropriate safeguards for these transfers, such as the European Commission’s Standard Contractual Clauses and, where applicable, the UK Addendum, together with additional technical and organisational measures.</p>
+
+<h2>12. Third-party services and app-store disclosures</h2>
+<p>This policy is intended to match the privacy disclosures we make in the App Store privacy labels and the Google Play <strong>Data safety</strong> section. The App does not use advertising SDKs, does not track you across other apps or websites, and does not request App Tracking Transparency or Android advertising-ID permissions for tracking purposes. Links to third-party services (for example the map provider) are governed by their own privacy policies.</p>
+
+<h2>13. Changes to this policy</h2>
+<p>We may update this policy from time to time. We will update the “Effective date” and “Last updated” dates at the top and, for material changes, notify you in the App or by other appropriate means before the change takes effect. Continued use of the App after an update means you accept the revised policy.</p>
+
+<h2>14. Contact us</h2>
+<p>YeahApps Limited<br>Email: <a href="mailto:y@yeahapps.me">y@yeahapps.me</a><br>For privacy requests, data access, correction, export or deletion, or any question about this policy, contact us at the email above. We aim to reply within 2 business days and to resolve formal requests within the time required by law.</p>
 </main></body></html>
