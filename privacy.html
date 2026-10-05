@@ -7,7 +7,7 @@ p,li{color:var(--muted)}strong{color:var(--text)}a{color:var(--accent)}.card{bac
 table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-top:1px solid rgba(127,127,127,.25);padding:8px 6px;text-align:left;vertical-align:top}th{color:var(--text)}
 nav a{margin-right:16px}</style></head><body><main><nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a></nav>
 <h1>Privacy Policy</h1>
-<p>AI Family Locator (“Family Locator: Kids Tracker” on the App Store and “AI Family Locator” on Google Play)<br>Effective date: 29 September 2026<br>Last updated: 3 October 2026</p>
+<p>AI Family Locator (“Family Locator: Kids Tracker” on the App Store and “AI Family Locator” on Google Play)<br>Effective date: 29 September 2026<br>Last updated: 5 October 2026</p>
 
 <div class="card">
 <p><strong>Who we are.</strong> The AI Family Locator mobile application (“the App”) is developed and operated by <strong>YeahApps Limited</strong> (“we”, “us”, “our”), which is also the data controller responsible for your personal data. Contact: <a href="mailto:y@yeahapps.me">y@yeahapps.me</a>.</p>
@@ -18,6 +18,7 @@ nav a{margin-right:16px}</style></head><body><main><nav><a href="./">Home</a><a 
 <ul><li>We share your location <strong>only with the family members you invite</strong> to your circle and who accept your invitation on their own device.</li>
 <li>We <strong>do not sell</strong> your personal data, <strong>do not use it for advertising</strong> and <strong>do not track you across other companies’ apps or websites</strong>. We do not use third-party advertising SDKs and we do not request App Tracking Transparency permission because we do not track you.</li>
 <li>Optional <strong>Screen Time</strong> information on iOS is processed locally using Apple’s Family Controls and Device Activity frameworks. The App displays your own device’s aggregate screen-time duration; we do not upload or store raw app, website or Screen Time activity data on our servers.</li>
+<li>Optional <strong>Wellbeing on iOS</strong> reads only the Apple Health categories you choose. Health readings and calculated insights stay on your device, in memory, and are never uploaded or shared with family members, analytics, advertisers or AI providers.</li>
 <li>We collect the data needed to run the family location service, nothing more.</li>
 <li>You can <strong>delete your account and data at any time</strong> — in the App (Profile → Delete account) or by writing to <a href="mailto:y@yeahapps.me">y@yeahapps.me</a> from the web, even if you have uninstalled the App.</li>
 <li>Data sent to and from our servers is encrypted in transit (HTTPS/TLS).</li></ul>
@@ -39,7 +40,20 @@ nav a{margin-right:16px}</style></head><body><main><nav><a href="./">Home</a><a 
 <tr><td><strong>Usage and diagnostic data</strong>: app interactions/events and crash reports</td><td>To understand which features are used and to fix crashes and improve reliability. This data is aggregated or pseudonymised and is not used for advertising. Legal basis: legitimate interests (service improvement).</td><td>No (you can limit analytics in device settings)</td></tr>
 <tr><td><strong>IP address</strong></td><td>To determine your approximate country for regional settings (for example the map provider) and for security/abuse prevention. Legal basis: legitimate interests.</td><td>Yes</td></tr>
 </table>
-<p><strong>We do not collect</strong> health data, financial account details, government IDs, biometric data, or your private messages/SMS. We do not access your microphone or camera unless you use a feature that requires it, and we do not collect your photos.</p>
+<p><strong>We do not collect or receive health data on our servers.</strong> The optional iOS Wellbeing feature accesses health data locally as described below. <strong>We do not collect</strong> financial account details, government IDs, biometric data, or your private messages/SMS. We do not access your microphone or camera unless you use a feature that requires it, and we do not collect your photos.</p>
+
+<h2>2a. Optional Apple Health / HealthKit (iOS only)</h2>
+<p>Wellbeing is optional, read-only and available without Premium. The system permission sheet opens only after you select categories and tap “Continue to Apple Health”. You may refuse any category. Location sharing and other features continue to work without health access.</p>
+<ul>
+<li><strong>Activity:</strong> step count, walking/running distance, flights climbed, active energy and exercise minutes.</li>
+<li><strong>Sleep:</strong> recorded sleep and in-bed intervals, sleep stages and recorded awake intervals.</li>
+<li><strong>Heart and breathing:</strong> resting heart rate, heart-rate variability (SDNN), respiratory rate and oxygen saturation.</li>
+<li><strong>Mobility:</strong> Apple Health’s walking steadiness estimate.</li>
+</ul>
+<p>We read the most recent 15 calendar days (one additional day of sleep intervals to establish overnight episodes) while you use Wellbeing. We calculate sleep duration, continuity-based quality estimates against your chosen goal, bedtime variation, recorded goal shortfall, daily totals, averages and weekly comparisons <strong>on your device</strong>. Missing readings are not fabricated. These are everyday wellbeing insights, not medical diagnoses, treatment, fall detection, continuous monitoring or emergency health alerts.</p>
+<p><strong>Retention and recipients:</strong> health readings and derived insights are held only in app memory and cleared when you leave the screen, disconnect, sign out, delete your account or the app enters the background. We do not save them to files, app databases, iCloud or app backups. We do not transmit them to our backend, family members, analytics, crash reports, advertising services or AI providers; no recipient receives them from us. We never sell or use health data for advertising, marketing, profiling, research or model training. Category selections and personal goals are stored locally as preferences without health readings.</p>
+<p><strong>Your choices:</strong> disconnect in Wellbeing → Health access &amp; goals to stop reads and clear this app’s health readings and preferences. Removing a category stops this app reading it. To revoke HealthKit permissions at the system level, open Health → your profile → Apps → Family Locator and disable the relevant access. We cannot revoke HealthKit permissions programmatically. Your original Apple Health records are not modified or deleted by Family Locator. Apple Health’s own storage and synchronization remain controlled by you and Apple.</p>
+<p>Your explicit choice and system permissions are the basis for this optional local processing. We do not infer your family members’ health from location or inactivity and do not give other people access to your device’s health records. A wearable or compatible data source may be needed for some categories. Apple protects read-permission decisions; no readings may mean missing data or unavailable read access.</p>
 
 <h2>3. Device permissions we request</h2>
 <ul>
@@ -48,6 +62,7 @@ nav a{margin-right:16px}</style></head><body><main><nav><a href="./">Home</a><a 
 <li><strong>Contacts</strong> — only to let you pick a phone number to invite. Your full address book is not uploaded.</li>
 <li><strong>Photos</strong> — only for the optional Journey feature, to read capture time and geotags on your device; photos are not uploaded.</li>
 <li><strong>Notifications</strong> — for arrival/departure, SOS, low-battery and account alerts.</li>
+<li><strong>Apple Health / HealthKit (iOS only, optional)</strong> — read-only access to the categories you choose for personal Wellbeing, as detailed in section 2a. No health data leaves your device.</li>
 <li><strong>Screen Time / Family Controls (iOS only, optional)</strong> — only when you tap “Enable Screen Time”. Apple presents the system authorization UI. The Screen Time report is rendered on-device by Apple’s Device Activity framework; denying this access does not block the rest of the App.</li>
 </ul>
 <p>You can change or withdraw any permission at any time in <strong>iOS Settings → AI Family Locator</strong> or <strong>Android Settings → Apps → AI Family Locator → Permissions</strong>. Denying location access prevents us from sharing your position with your family, but the App remains usable to a limited extent.</p>
